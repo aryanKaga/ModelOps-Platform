@@ -1,6 +1,6 @@
 # MLOps K8s Platform
 
-[![PR Validation](https://github.com/karthikk022/mlops-k8s-platform/actions/workflows/test.yml/badge.svg)](https://github.com/karthikk022/mlops-k8s-platform/actions/workflows/test.yml)
+[![PR Validation](https://github.com/aryanKaga/ModelOps-Platform/actions/workflows/test.yml/badge.svg)](https://github.com/aryanKaga/ModelOps-Platform/actions/workflows/test.yml)
 
 End-to-end production ML platform on Amazon EKS — automated training pipelines, feature store, model serving with canary rollouts, drift monitoring, and infrastructure-as-code. **19 passing tests covering the full ML lifecycle.**
 
@@ -132,8 +132,8 @@ python -m pytest tests/ -v --tb=short
 
 ```bash
 # 1. Clone and configure
-git clone https://github.com/karthikk022/mlops-k8s-platform.git
-cd mlops-k8s-platform
+git clone https://github.com/aryanKaga/ModelOps-Platform.git
+cd ModelOps-Platform
 
 # 2. Provision EKS cluster + ML platform
 make setup-cluster          # or: cd infrastructure/terraform/environments/dev && terraform apply
@@ -160,7 +160,7 @@ make port-forward-mlflow    # MLflow UI at localhost:5000
 ## Project Structure
 
 ```
-mlops-k8s-platform/
+ModelOps-Platform/
 ├── .github/workflows/          # CI/CD automation (5 workflows)
 │   ├── test.yml                # PR validation — lint + 19 tests
 │   ├── ml-pipeline.yml         # Training pipeline — validate → build → train → register
